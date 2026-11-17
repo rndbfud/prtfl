@@ -5555,6 +5555,24 @@
                   cursor: auto;
                 }
 
+                #panel7,
+                .flip {
+                  padding: 0.5em;
+                  width: auto;
+                  text-align: center;
+                  background-color: none;
+                  color: #222;
+                  font-size: 0.5em;
+                  font-family: "Overpass Mono";
+                  margin: auto;
+                  cursor: pointer;
+                }
+
+                #panel7 {
+                  display: none;
+                  cursor: auto;
+                }
+
                 .nothing-you-could-do-regular {
                   font-family: "Nothing You Could Do", cursive;
                   font-weight: 400;
@@ -5632,6 +5650,13 @@
                   float: left;
                   width: auto;
                   margin: 0px 0px 0px 0px;
+                }
+
+                #linkoshide {
+                  float: left;
+                  width: auto;
+                  margin: 0px 0px 0px 0px;
+            visibility: hidden;
                 }
 
                 .button {
@@ -5760,7 +5785,7 @@
                         <div style="float:left;width:35%;">
                           <div id="linkos"><a href="#planner" class="button">Planner　　　　　　&rarr;</a></div>
                           <div id="linkos"><a href="https://rndbfud.gumroad.com" class="button">product market 　&rarr;</a></div>
-                          <div id="linkos"><a href="#archive" class="button">archive　 　　　　　&rarr;</a></div>
+                          <div id="linkoshide"><a href="#archive" class="button">archive　 　　　　　&rarr;</a></div>
                         </div>
                         <div style="float:right;width:60%;padding-bottom:7%;">
                           <div style="float:right;width:100%;">
@@ -5773,6 +5798,8 @@
                             <div class="flip" onclick="myFunction1()" style="width:6.5em;float:left;text-align:left;font-size:1.2em;">Q1 2026</div>
                             <div class="flip" onclick="myFunction2()" style="width:6.5em;float:left;text-align:left;font-size:1.2em;">Q2 2026</div>
                             <div class="flip" onclick="myFunction3()" style="width:6.5em;float:left;text-align:left;font-size:1.2em;">Q3 2026</div>
+
+ <div class="flip" onclick="myFunction7()" style="width:6.5em;float:left;text-align:left;font-size:1.2em;">Q4 2026</div>
                             <div id="panel1">
                               <div style="width:100%;height:auto;float:left;margin:10px 0px 0px 0px;padding:0em 0em 0.3em 0em;padding:1em;">
                                 <div style="float:left;width:100%;margin:0px 0px 0px 0px;vertical-align: text-bottom;">
@@ -5809,6 +5836,19 @@
                                 </div>
                               </div>
                             </div>
+
+<div id="panel7">
+                              <div style="width:100%;height:auto;float:left;margin:10px 0px 0px 0px;padding:0em 0em 0.3em 0em;padding:1em;">
+                                <div style="float:left;width:100%;margin:0px 0px 0px 0px;vertical-align: text-bottom;">
+                                  <div class="homemade-apple-regular" style="color:#ee8e5e;">Two Women<br />Living Together</div>
+                                  <div id="bcn-text"><em>by Kim Hana & Hwang Seonwoo</em></div>
+                                  <div id="bcn-text" style="margin:16px 0px 0px 20px;">It follows the story of how Hana and Sunwoo ended up in a co-living situation<br /><br /><em>Personally really resonated with this book. I read it in the Korean version but it also has an English translation, which is fantastic and nuanced, too.</i></em></div>
+                                </div>
+                                <div id="bcn-picontainer">
+                                  <div id="bcn-pic"><img alt="" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1552611819i/44432977.jpg" style="width:100%;" title="everything everything" /></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -5816,7 +5856,132 @@
                   </div>
                 </div>
               </div>
-              <unloaded-script> function myFunction1() { var x = document.getElementById("panel1"); var y = document.getElementById("panel2"); var z = document.getElementById("panel3"); if (x.style.display === "none") { x.style.display = "block"; y.style.display = "none"; z.style.display = "none"; } else { x.style.display = "none"; y.style.display = "none"; z.style.display = "none"; } } function myFunction2() { var x = document.getElementById("panel2"); var y = document.getElementById("panel1"); var z = document.getElementById("panel3"); if (x.style.display === "none") { x.style.display = "block"; y.style.display = "none"; z.style.display = "none"; } else { x.style.display = "none"; y.style.display = "none"; z.style.display = "none"; } } function myFunction3() { var x = document.getElementById("panel3"); var y = document.getElementById("panel1"); var z = document.getElementById("panel2"); if (x.style.display === "none") { x.style.display = "block"; y.style.display = "none"; z.style.display = "none"; } else { x.style.display = "none"; y.style.display = "none"; z.style.display = "none"; } } function myFunction4() { var x = document.getElementById("panel4"); var y = document.getElementById("panel5"); var z = document.getElementById("panel6"); if (x.style.display === "none") { x.style.display = "block"; y.style.display = "none"; z.style.display = "none"; } else { x.style.display = "none"; y.style.display = "none"; z.style.display = "none"; } } function myFunction5() { var x = document.getElementById("panel5"); var y = document.getElementById("panel4"); var z = document.getElementById("panel6"); if (x.style.display === "none") { x.style.display = "block"; y.style.display = "none"; z.style.display = "none"; } else { x.style.display = "none"; y.style.display = "none"; z.style.display = "none"; } } function myFunction6() { var x = document.getElementById("panel6"); var y = document.getElementById("panel4"); var z = document.getElementById("panel5"); if (x.style.display === "none") { x.style.display = "block"; y.style.display = "none"; z.style.display = "none"; } else { x.style.display = "none"; y.style.display = "none"; z.style.display = "none"; } } </unloaded-script>
+              <unloaded-script> 
+function myFunction1() { 
+var x = document.getElementById("panel1"); 
+var y = document.getElementById("panel2"); 
+var z = document.getElementById("panel3"); 
+var a = document.getElementById("panel7"); 
+
+if (x.style.display === "none") { 
+x.style.display = "block"; 
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } 
+
+else { 
+x.style.display = "none";
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } }
+
+function myFunction2() { 
+var x = document.getElementById("panel2"); 
+var y = document.getElementById("panel1"); 
+var z = document.getElementById("panel3"); 
+var a = document.getElementById("panel7"); 
+
+if (x.style.display === "none") { 
+x.style.display = "block"; 
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } 
+
+else { 
+x.style.display = "none";
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } } 
+
+function myFunction3() { 
+var x = document.getElementById("panel3"); 
+var y = document.getElementById("panel1"); 
+var z = document.getElementById("panel2"); 
+var a = document.getElementById("panel7"); 
+
+if (x.style.display === "none") { 
+x.style.display = "block"; 
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } 
+
+else { 
+x.style.display = "none";
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } }
+
+function myFunction7() { 
+var x = document.getElementById("panel7"); 
+var y = document.getElementById("panel1"); 
+var z = document.getElementById("panel2"); 
+var a = document.getElementById("panel3"); 
+
+if (x.style.display === "none") { 
+x.style.display = "block"; 
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } 
+
+else { 
+x.style.display = "none";
+y.style.display = "none"; 
+z.style.display = "none"; 
+a.style.display = "none"; } }
+
+
+
+
+
+
+
+
+
+
+function myFunction4() { 
+var x = document.getElementById("panel4"); 
+var y = document.getElementById("panel5"); 
+var z = document.getElementById("panel6"); 
+
+if (x.style.display === "none") { 
+x.style.display = "block"; 
+y.style.display = "none"; 
+z.style.display = "none"; } 
+
+else { 
+x.style.display = "none"; 
+y.style.display = "none"; 
+z.style.display = "none"; } } 
+
+function myFunction5() { 
+var x = document.getElementById("panel5"); 
+var y = document.getElementById("panel4"); 
+var z = document.getElementById("panel6"); 
+
+if (x.style.display === "none") { 
+x.style.display = "block"; 
+y.style.display = "none"; 
+z.style.display = "none"; } 
+
+else { 
+x.style.display = "none"; 
+y.style.display = "none"; 
+z.style.display = "none"; } } 
+
+function myFunction6() { 
+var x = document.getElementById("panel6"); 
+var y = document.getElementById("panel4"); 
+var z = document.getElementById("panel5"); 
+
+if (x.style.display === "none") { 
+x.style.display = "block"; 
+y.style.display = "none"; 
+z.style.display = "none"; } 
+
+else { 
+x.style.display = "none";
+y.style.display = "none"; 
+z.style.display = "none"; } } </unloaded-script>
             </body>
 
             </html>
@@ -5894,7 +6059,7 @@
               <div class="inner">
                 <div>
                   <h2 id="text21" class="text-component instance-21"><strong>Title here</strong></h2>
-                  <div id="image09" class="image-component instance-9"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA1NDAgNjc1IiB3aWR0aD0iNTQwIiBoZWlnaHQ9IjY3NSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0iIzIzMTgxNSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D" data-src="assets/images/image09.jpg?v=95c951cd" alt="" /></span></div>
+                  <div id="image09" class="image-component instance-9"><span class="frame deferred"><img src="BPHJlY3QgZmlsbD0iIzIzMTgxNSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D" data-src="assets/images/image09.jpg?v=95c951cd" alt="" /></span></div>
                   <p id="text22" class="text-component instance-22"><span class="p">⟨ <mark><em>author</em></mark> ⟩</span><span class="p">lorem ipsum dolor sit amet consectetur adispicing elit.</span></p>
                   <div id="table09" class="table-component instance-9">
                     <div class="inner">
